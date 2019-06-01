@@ -1,12 +1,7 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include <SFML\System.hpp>
-#include <SFML\Graphics.hpp>
-#include <SFML\Window.hpp>
-#include <SFML\Network.hpp>
-#include <SFML\Audio.hpp>
-
+#include "State.h"
 
 class Game
 {
