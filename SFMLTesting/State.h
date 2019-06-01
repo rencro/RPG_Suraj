@@ -10,6 +10,8 @@
 #include <iostream>
 #include <ctime>
 #include <vector>
+#include <fstream>
+#include <sstream>
 
 class State
 {

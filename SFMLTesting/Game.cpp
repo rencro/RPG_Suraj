@@ -5,7 +5,7 @@
 //Initializer functions
 void Game::initWindow()
 {
-	/*Creates a SFML window using options from a window.ini file.
+	/*Creates a SFML window using options from a window.ini file.*/
 
 	std::ifstream ifs("Config/window.ini");
 
@@ -26,9 +26,9 @@ void Game::initWindow()
 
 	this->window = new sf::RenderWindow(window_bounds, title);
 	this->window->setFramerateLimit(framerate_limit);
-	this->window->setVerticalSyncEnabled(vertical_sync_enabled); */
+	this->window->setVerticalSyncEnabled(vertical_sync_enabled);
 
-	this->window = new sf::RenderWindow(sf::VideoMode(800, 600), "C++ SFML RPG");
+//	this->window = new sf::RenderWindow(sf::VideoMode(800, 600), "C++ SFML RPG");
 }
 
 //Constructors/Destructors
