@@ -56,6 +56,11 @@ Game::~Game()
 
 //Functions
 
+void Game::endAplication()
+{
+	std::cout << "Ending Application!" << "\n";
+}
+
 void Game::updateDt()
 {
 	/*Updates the dt variable with the time it takes to update and render one frame.*/
@@ -79,8 +84,21 @@ void Game::update()
 
 	//Application end
 	if (!this->states.empty())
+	{
 		this->states.top()->update(this->dt);
 
+		if (this->states.top()->getQuit())
+		{
+			this->states.top()->endState();
+			delete this->states.top();
+			this->states.pop();
+		}
+	}
+	else
+	{
+		this->endAplication();
+		this->window->close();
+	}
 }
 
 void Game::render()

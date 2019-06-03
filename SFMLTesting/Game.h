@@ -27,6 +27,7 @@ public:
 	//Functions
 
 	//Regular
+	void endAplication();
 
 	//Update
 	void updateDt();
