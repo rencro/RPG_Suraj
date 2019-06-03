@@ -106,7 +106,7 @@ void Game::render()
 	this->window->clear();
 
 	//Render items
-	if (this->states.empty())
+	if (!this->states.empty())
 		this->states.top()->render();
 
 	this->window->display();

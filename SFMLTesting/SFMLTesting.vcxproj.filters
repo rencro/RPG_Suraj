@@ -16,6 +16,15 @@
     <Filter Include="States">
       <UniqueIdentifier>{12a7ef46-c483-4ffd-b155-1791c6c4d873}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{a92134d1-3175-497b-ac55-c85105d7bf14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States\Header Files">
+      <UniqueIdentifier>{e5d48570-e696-4e69-8f24-a504895c1f45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Header Files">
+      <UniqueIdentifier>{b4e7a28e-0363-4b01-b94d-99ed18ea1f39}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -30,16 +39,22 @@
     <ClCompile Include="State.cpp">
       <Filter>States</Filter>
     </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="State.h">
-      <Filter>States</Filter>
-    </ClInclude>
     <ClInclude Include="GameState.h">
-      <Filter>States</Filter>
+      <Filter>States\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>States\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Entities\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
