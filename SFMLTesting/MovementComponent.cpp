@@ -56,8 +56,6 @@ const bool MovementComponent::getState(const short unsigned state) const
 		break;
 	}
 	
-	
-	
 	return false;
 }
 
